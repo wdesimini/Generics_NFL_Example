@@ -1,9 +1,9 @@
+public enum ActionType {
+    case playerAction(_ action: Player.Action)
+    case teamAction(_ action: Team.Action)
+}
+
 public struct Action<PerformerType: Finable> {
-    public enum ActionType {
-        case hitOpposingPlayerInHead
-        case breakCovidProtocol
-    }
-    
     public let type: ActionType
     public let performer: PerformerType
     
